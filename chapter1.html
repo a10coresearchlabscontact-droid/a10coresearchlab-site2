@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaVerse™ — Book I — Chapter I (Preview)</title>
+  <meta name="description" content="NovaVerse™ — Book I — Chapter I (Preview). Read the first chapter." />
+  <style>
+    :root{
+      --bg:#050811; --panel:#0c111c; --accent:#24d1ff;
+      --text:#f5f7ff; --muted:#a3acc4; --border:rgba(255,255,255,.10);
+      --max:920px; --radius:16px;
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+    body{
+      margin:0; color:var(--text);
+      background:radial-gradient(circle at top,#0c1630 0,#02040a 55%,#000 100%);
+      line-height:1.7;
+    }
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter:blur(14px);
+      background:linear-gradient(to bottom,rgba(2,4,12,.96),rgba(2,4,12,.86),transparent);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{
+      max-width:var(--max); margin:0 auto; padding:14px 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .brand{display:flex; align-items:center; gap:10px; text-decoration:none;}
+    .logo{
+      width:44px;height:44px;border-radius:12px; overflow:hidden;
+      border:1px solid rgba(36,209,255,.7);
+      background:rgba(15,23,42,.6);
+    }
+    .logo img{width:100%;height:100%;object-fit:contain}
+    .brand strong{font-size:12px; letter-spacing:.14em; text-transform:uppercase}
+    .brand span{display:block; font-size:11px; color:var(--muted); letter-spacing:.10em}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:9px 14px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      color:var(--text); text-decoration:none;
+      font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+      background:rgba(15,23,42,.6);
+    }
+    .btn:hover{border-color:rgba(36,209,255,.8)}
+    main{max-width:var(--max); margin:0 auto; padding:26px 16px 60px;}
+    .card{
+      border-radius:var(--radius);
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(9,16,32,.92);
+      box-shadow:0 24px 90px rgba(0,0,0,.55);
+      padding:18px 18px 20px;
+    }
+    .kicker{
+      color:var(--accent);
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-size:11px;
+      margin-bottom:6px;
+    }
+    h1{margin:0 0 6px; font-size:22px; line-height:1.2}
+    .meta{color:var(--muted); font-size:13px; margin-bottom:16px}
+    .chapter p{color:rgba(245,247,255,.92); font-size:15px; margin:0 0 14px}
+    .legal{
+      margin-top:18px; padding-top:14px;
+      border-top:1px solid rgba(255,255,255,.10);
+      color:var(--muted); font-size:12px;
+    }
+    .legal a{color:var(--accent)}
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html" aria-label="Back to home">
+      <div class="logo"><img src="a10-logo.jpg" alt="A-10 logo"></div>
+      <div>
+        <strong>A-10 C.O. Research Lab USA</strong>
+        <span>NovaVerse™ — Chapter I (Preview)</span>
+      </div>
+    </a>
+    <a class="btn" href="index.html#novaverse">← Back</a>
+  </div>
+</header>
+
+<main>
+  <div class="card">
+    <div class="kicker">NovaVerse™ — Book I</div>
+    <h1>Chapter I — Preview</h1>
+    <div class="meta">
+      Read-only preview · English version · © <span id="year"></span> A-10 C.O. Research Lab USA
+    </div>
+
+    <!-- CHAPTER CONTENT (replace this area with the real chapter text) -->
+    <div class="chapter">
+      <p><em>Paste Chapter I (English) here.</em></p>
+      <p>Tip: keep the preview public-friendly (no spoilers, ~5–15 minutes reading).</p>
+    </div>
+
+    <div class="legal">
+      For publishing / rights inquiries: <a href="mailto:a10c.o.researchlabs.contact@gmail.com">a10c.o.researchlabs.contact@gmail.com</a>
+    </div>
+  </div>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
